@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'arnaiz';
-    src: url(assets/Arnaiz.otf);
+    src: url(/assets/Arnaiz.otf);
 }
 
 @font-face {
     font-family: 'benzin';
-    src: url(assets/Benzin.ttf);
+    src: url(/assets/Benzin.ttf);
 }
 
 @font-face {
     font-family: 'clash';
-    src: url(assets/ClashDisplay-Bold.otf);
+    src: url(/assets/ClashDisplay-Bold.otf);
 }
 
 
