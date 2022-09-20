@@ -1,0 +1,130 @@
+header, .left, .right, footer {z-index: 2; }
+.background {z-index: 1;}
+
+@-webkit-keyframes circle {
+
+    25%{
+        -webkit-transform:rotate(360deg)
+                  translate(-165px)
+                  rotate(0deg);
+                transform:rotate(360deg)
+                  translate(-165px)
+                  rotate(0deg);
+                  scale: (2);
+      
+      }
+
+      50%{
+        -webkit-transform:rotate(360deg)
+                  translate(-165px)
+                  rotate(-360deg);
+                transform:rotate(360deg)
+                  translate(-165px)
+                  rotate(-360deg);
+                  scale: (2);
+
+      }
+    }
+
+@keyframes circle {
+
+    25%{
+        -webkit-transform:rotate(360deg)
+                  translate(-165px)
+                  rotate(0deg);
+                transform:rotate(360deg)
+                  translate(-165px)
+                  rotate(0deg);
+                  scale: (2);
+      
+      }
+
+      50%{
+        -webkit-transform:rotate(360deg)
+                  translate(-165px)
+                  rotate(-360deg);
+                transform:rotate(360deg)
+                  translate(-165px)
+                  rotate(-360deg);
+                  scale: (2);
+
+      }
+    }
+
+
+.background {
+    background-color: #2F143D;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 9;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 16;
+    grid-area: 1 / 1 / 10 / 17;  
+    margin: 0;
+    position: absolute;
+    left: 0; 
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+
+}
+
+.blur {
+    position: absolute;
+    border-radius: 50%;
+    -webkit-animation: circle 30s linear infinite ;
+            animation: circle 30s linear infinite ; 
+}
+
+
+.blur:nth-child(1) {
+    height: 130%;
+    width: 130%;
+    background-color: #8B39B4;
+    left: -22%;
+    top: -20%;
+    opacity: 0.85;
+}
+
+.blur:nth-child(2) {
+    height: 200%;
+    width: 70%;
+    background-color: #2E1F4D;
+    right: -15%;
+    top: -10%;
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+    opacity: 0.7;
+    
+}
+
+.blur:nth-child(3) {
+    height: 100%;
+    width: 70%;
+    background-color: #56B4B4;
+    left: 50%;
+    top: 80%;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    opacity: 0.7;
+   
+}
+
+.blur:nth-child(4) {
+    height: 45%;
+    width: 90%;
+    background-color: #8093BC;
+    right: 10%;
+    top: 85%;
+    opacity: 0.5;
+    
+}
+
+.background::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    -webkit-backdrop-filter: blur(150px);
+            backdrop-filter: blur(150px);
+}
