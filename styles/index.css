@@ -1,16 +1,28 @@
 @font-face {
     font-family: 'arnaiz';
-    src: url(../assets/Arnaiz.otf);
+<<<<<<< HEAD
+    src: url(./assets/Arnaiz.otf);
+=======
+    src: url(./assets/Arnaiz.otf);
+>>>>>>> 162f7eef1256d71db5d46fa42419ab697bed8feb
 }
 
 @font-face {
     font-family: 'benzin';
+<<<<<<< HEAD
     src: url(../assets/Benzin.ttf);
+=======
+    src: url(./assets/Benzin.ttf);
+>>>>>>> 162f7eef1256d71db5d46fa42419ab697bed8feb
 }
 
 @font-face {
     font-family: 'clash';
+<<<<<<< HEAD
     src: url(../assets/ClashDisplay-Bold.otf);
+=======
+    src: url(./assets/ClashDisplay-Bold.otf);
+>>>>>>> 162f7eef1256d71db5d46fa42419ab697bed8feb
 }
 
 
