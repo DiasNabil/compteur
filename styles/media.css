@@ -25,7 +25,7 @@ body {
     }
 
     header {height: 15VH; min-height: 100px; transition: 1s; justify-content: center;}
-    .left {height: 35vh; min-height: 150px; transition: 1s; margin: 3em 0;}
+    .left {height: 35vh; min-height: 150px; transition: 1s; margin: 1.5em 0;}
     .right {height: 35vh; min-height: 150px; transition: 1s;}
     footer {height: 15VH; min-height: 100px; transition: 1s;}
 
