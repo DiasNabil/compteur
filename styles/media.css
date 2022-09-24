@@ -3,28 +3,30 @@ body {
     margin: 0;
     display: grid;
 
-    
+    transition: 1s;
     
     }
     
-    .background{ grid-area: 1 / 1 / 5 / 6; }
-    header { grid-area: 1 / 1 / 2 / 6; height: 15VH; }
-    .left { grid-area: 2 / 1 / 4 / 4;  height: 70vh; }
-    .right { grid-area: 2 / 4 / 4 / 6; height: 70vh; }
-    footer { grid-area: 4 / 1 / 5 / 6; height: 15VH; }
+    .background{ grid-area: 1 / 1 / 5 / 6;   transition: opacity 2s;}
+    header { grid-area: 1 / 1 / 2 / 6; height: 15VH;   transition: 1s;}
+    .left { grid-area: 2 / 1 / 4 / 4;  height: 70vh;   transition: 1s;}
+    .right { grid-area: 2 / 4 / 4 / 6; height: 70vh;   transition: 1s;}
+    footer { grid-area: 4 / 1 / 5 / 6; height: 15VH;   transition: 1s;}
 
 
 @media screen and (max-width:800px){
 
-    .background {display: none;}
+    
+    .background {opacity: 0; }
     body {
         display: flex;
-        flex-direction: column;    
+        flex-direction: column; 
+        transition: 1s;   
     }
 
-    header {height: 15VH; min-height: 100px;justify-content: center;}
-    .left {height: 35vh; min-height: 150px;}
-    .right {height: 35vh; min-height: 150px;}
-    footer {height: 15VH; min-height: 100px;}
+    header {height: 15VH; min-height: 100px; transition: 1s; justify-content: center;}
+    .left {height: 35vh; min-height: 150px; transition: 1s; margin: 3em 0;}
+    .right {height: 35vh; min-height: 150px; transition: 1s;}
+    footer {height: 15VH; min-height: 100px; transition: 1s;}
 
 }

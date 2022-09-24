@@ -33,7 +33,7 @@ header, .left, .right, footer {z-index: 2;}
  
   background-color: #2F143D;
   width: 100vw;
-  height: 100vh;
+ 
   overflow: hidden;  
   position: relative;
 
