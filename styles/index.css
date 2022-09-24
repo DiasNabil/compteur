@@ -170,7 +170,7 @@ header {
             overflow: hidden;
 
             position: absolute;
-            animation: animate 5s linear infinite;
+            animation: animate 15s linear infinite;
             
             
         }
@@ -193,6 +193,8 @@ header {
                 -webkit-text-stroke-width: 0.2px;
                 transition: font-size 3s;
             }
+
+            .social span {cursor: pointer;}
 
 
 
