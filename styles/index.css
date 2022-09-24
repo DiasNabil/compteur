@@ -147,55 +147,57 @@ header {
             
     }
 
-    footer { 
+    footer {
         display: flex;
             align-items: flex-end;
+            
+            width:  100vw;
+            position: relative;
         overflow: hidden;
-
         margin: 0;
     }
+
+    @keyframes animate {
+        0% {right: -100%;}
+        100%{right: 0%;}
+    }
         .slide {
-        
-            width:  100%;
-            display: flex; 
+            
+            width:  200%;
+            
+            display: flex;
+
             overflow: hidden;
+
+            position: absolute;
+            animation: animate 5s linear infinite;
+            
             
         }
         
-            .social, .social2 { 
+            .social {
+              
                 font-size: 2.5em;
-                white-space: nowrap;
-                animation: animate 15s linear infinite;
+                width: 100%;
+                
+                display: flex;
+                justify-content: space-around;
+                
+
                 font-family: 'clash';
+
+
+                position: relative;
 
                 -webkit-text-fill-color: transparent;
                 -webkit-text-stroke-width: 0.2px;
-                cursor: pointer;
+                transition: font-size 3s;
             }
 
-            @-webkit-keyframes animate {
-                0%{
-                    -webkit-transform: translateX(0%) ;
-                            transform: translateX(0%) ;
-                }
-                100% {
-                    -webkit-transform: translateX(-100%);
-                            transform: translateX(-100%);
-                }
-                
-            }
 
-            @keyframes animate {
-                0%{
-                    -webkit-transform: translateX(0%) ;
-                            transform: translateX(0%) ;
-                }
-                100% {
-                    -webkit-transform: translateX(-100%);
-                            transform: translateX(-100%);
-                }
-                
-            }
+
+
+
 
 
 
