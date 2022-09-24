@@ -98,4 +98,5 @@ header, .left, .right, footer {z-index: 2;}
     height: 100%;
     width: 100%;
     backdrop-filter: blur(150px);
+    -webkit-backdrop-filter: blur(150px);
 }
