@@ -3,7 +3,7 @@
     src: url(../assets/Arnaiz.otf);
 }
 
-@font-face {
+@font-face { 
     font-family: 'benzin';
     src: url(../assets/Benzin.ttf);
 }
@@ -16,28 +16,17 @@
 
 body {
         
-        width: 100vw;
-        height: 100vh;
-
-        margin: 1px;
-        padding: auto;
-        background-color: black;
-        color: white;
-
-        overflow: hidden;
+    background-color: black;
+    color: white;
 
 }
 
 header {
-        padding: 2em;
-        display: -webkit-box;
-        display: -ms-flexbox;
+    margin: 0;
+    
         display: flex;
-        -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-        -webkit-box-align: start;
-            -ms-flex-align: start;
-                align-items: start;
+            align-items: start;
 }
 
 
@@ -45,43 +34,24 @@ header {
     font-family: 'arnaiz';
     font-size: 2em;
     text-align: center;
+    margin: 1em;
 }
 
 .left {
-
-    display: -webkit-box;
-
-    display: -ms-flexbox;
-
+    margin: 0; 
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
             align-items: center;
-
-
 }
 
 
-.focus { 
-
-    -webkit-transition: -webkit-transform 4s cubic-bezier(0.23,1.83,0.42,0.19); 
-
-    transition: -webkit-transform 4s cubic-bezier(0.23,1.83,0.42,0.19); 
-
-    -o-transition: transform 4s cubic-bezier(0.23,1.83,0.42,0.19); 
-
+.focus {  
     transition: transform 4s cubic-bezier(0.23,1.83,0.42,0.19); 
 
-    transition: transform 4s cubic-bezier(0.23,1.83,0.42,0.19), -webkit-transform 4s cubic-bezier(0.23,1.83,0.42,0.19);
     cursor: pointer;        
 }
     .focus:hover {
-        -webkit-transform: scale(0.75);
-            -ms-transform: scale(0.75);
-                transform: scale(0.75);
+        transform: scale(0.75);
     }
 
     .circle {
@@ -89,38 +59,11 @@ header {
         width: 200px;
         height: 200px;
         border-radius: 50%;
-        -webkit-animation : 3s linear infinite alternate boxMagic,
-                    8s linear infinite spinning;
-                animation : 3s linear infinite alternate boxMagic,
+        animation : 3s linear infinite alternate boxMagic,
                     8s linear infinite spinning
                     
     }
-        @-webkit-keyframes boxMagic {
-            from {
-                -webkit-box-shadow: 
-                1px -1px 2.5px #a6bff5,
-                -1px 1px 2.5px #591b77,
-                1px 1px 2.5px #ad38e7,
-                1px 1px 2.5px #56B4B4;
-                        box-shadow: 
-                1px -1px 2.5px #a6bff5,
-                -1px 1px 2.5px #591b77,
-                1px 1px 2.5px #ad38e7,
-                1px 1px 2.5px #56B4B4;
-            }
-            to {
-                -webkit-box-shadow: 
-                0 -10px 5px #a6bff5,
-                -10px 0 5px #591b77,
-                10px 0 5px #ad38e7,
-                0 10px 5px #56B4B4;
-                        box-shadow: 
-                0 -10px 5px #a6bff5,
-                -10px 0 5px #591b77,
-                10px 0 5px #ad38e7,
-                0 10px 5px #56B4B4;
-            }
-        }
+
         @keyframes boxMagic {
             from {
                 -webkit-box-shadow: 
@@ -148,19 +91,6 @@ header {
             }
         }
 
-        @-webkit-keyframes spinning{
-
-            from {
-                -webkit-transform: rotate(0deg);
-                        transform: rotate(0deg);
-            }
-            to {
-                -webkit-transform: rotate(360deg);
-                        transform: rotate(360deg);
-            }
-
-        }
-
         @keyframes spinning{
 
             from {
@@ -172,23 +102,6 @@ header {
                         transform: rotate(360deg);
             }
 
-        }
-
-        @-webkit-keyframes pulse {
-            0% {
-                opacity: 1;
-                -webkit-transform: rotate(0) scale();
-                        transform: rotate(0) scale();
-            }
-        
-            100% {
-                opacity: 0;
-                -webkit-transform: rotate(-720deg) scale(0.55);
-                        transform: rotate(-720deg) scale(0.55);
-                cursor: auto;
-            }
-
-            
         }
 
         @keyframes pulse {
@@ -209,27 +122,12 @@ header {
         }
 
 
-
+    .right { 
         
-
-    .right {
-        
-        display: -webkit-box;
-        
-        display: -ms-flexbox;
         
         display: flex;
-        -webkit-box-pack: space-evenly;
-            -ms-flex-pack: space-evenly;
-                justify-content: space-evenly;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        
-        
-        
-        -ms-flex-wrap: wrap;
-        
+            justify-content: space-evenly;
+            align-items: center;
         
         
             flex-wrap: wrap;
@@ -241,40 +139,24 @@ header {
     .compteur { 
         font-size: 5em;
         
-        display: -webkit-box;
-        
-        display: -ms-flexbox;
-        
         display: flex; 
-        text-align: center;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;   
+            text-align: center;
+            justify-content: center;   
           
         font-family: 'benzin'
             
     }
 
     footer { 
-        
-        display: -webkit-box; 
-        
-        display: -ms-flexbox; 
-        
         display: flex;
-        -webkit-box-align: end;
-            -ms-flex-align: end;
-                align-items: flex-end;
+            align-items: flex-end;
         overflow: hidden;
+
+        margin: 0;
     }
         .slide {
         
             width:  100%;
-            
-            display: -webkit-box;
-            
-            display: -ms-flexbox;
-            
             display: flex; 
             overflow: hidden;
             
@@ -283,8 +165,7 @@ header {
             .social, .social2 { 
                 font-size: 2.5em;
                 white-space: nowrap;
-                -webkit-animation: animate 15s linear infinite;
-                        animation: animate 15s linear infinite;
+                animation: animate 15s linear infinite;
                 font-family: 'clash';
 
                 -webkit-text-fill-color: transparent;
